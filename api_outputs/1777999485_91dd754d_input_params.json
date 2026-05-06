@@ -1,0 +1,47 @@
+{
+    "format": "wav",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "R&B, soulful, piano, strings, 70 bpm, heartfelt, emotional, female vocals, nostalgic, uplifting",
+    "lyrics": "[verse 1]\nIn the quiet of the night, I hear your heart,\nEvery whisper, every tear, a work of art.\nYou gave your all, through the pain and the strife,\nA warrior's spirit, you fought for my life.\n\n[chorus]\nOh, Mom, you’re my guiding star,\nThrough the darkest nights, you’ve come so far.\nWith every struggle, every silent prayer,\nYou showed me love beyond compare.\n\n[verse 2]\nI remember the nights when you held me tight,\nThrough the storms of doubt, you were my light.\nYou sacrificed dreams, but never your grace,\nEvery smile you wore, a warm embrace.\n\n[chorus]\nOh, Mom, you’re my guiding star,\nThrough the darkest nights, you’ve come so far.\nWith every struggle, every silent prayer,\nYou showed me love beyond compare.\n\n[bridge]\nNow I stand tall, with dreams in my hand,\nBut it’s your strength that helped me to stand.\nThough miles may stretch between us now,\nIn my heart, I’ll always vow.\n\n[verse 3]\nTo honor your fight, to cherish your name,\nIn every success, I’ll share your flame.\nYou taught me to rise, to never lose hope,\nWith your love as my anchor, I learned how to cope.\n\n[chorus]\nOh, Mom, you’re my guiding star,\nThrough the darkest nights, you’ve come so far.\nWith every struggle, every silent prayer,\nYou showed me love beyond compare.\n\n[outro]\nSo here’s to you, my heart’s true song,\nFor all the battles, for being so strong.\nThough time may pass, and I may roam,\nForever, dear Mom, you’ll be my home.\n",
+    "audio_duration": 240.0,
+    "infer_step": 60,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.060715675354003906,
+        "diffusion": 206.75104117393494,
+        "latent2audio": 18.882906675338745
+    },
+    "actual_seeds": [
+        29003644
+    ],
+    "retake_seeds": [
+        1196565871
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1777999485_91dd754d.wav"
+}

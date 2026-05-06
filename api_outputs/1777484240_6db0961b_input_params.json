@@ -1,0 +1,47 @@
+{
+    "format": "wav",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "lo-fi, piano, soft drums, vinyl crackle, 75 bpm, chill, mellow, warm, instrumental",
+    "lyrics": "[verse]\nYou walked in like a summer sky\nLit the dark with your neon eyes\nEvery step made the room ignite\nNow I’m spinning in satellite\n\n[pre-chorus]\nHands close, world slow\nEverything fades when you say hello\nOne touch, rush flow\nBaby you’re the only one I know\n\n[chorus]\nYou got my heartbeat going wild\nLike sparks that never settle down\nKiss me under city lights\nWe can turn this love around\nYou got my heartbeat in the air\nLike music playing everywhere\nHold me like the stars won’t part\nYou got my electric heartbeat heart\n\n[verse]\nMidnight dancing on avenue\nEvery song starts sounding like you\nLaughing while the skyline glows\nWhere we stop, nobody knows\n",
+    "audio_duration": 80.0,
+    "infer_step": 60,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.12428832054138184,
+        "diffusion": 66.61985063552856,
+        "latent2audio": 6.285953760147095
+    },
+    "actual_seeds": [
+        1070506630
+    ],
+    "retake_seeds": [
+        3445119095
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1777484240_6db0961b.wav"
+}

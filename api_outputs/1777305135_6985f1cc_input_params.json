@@ -1,0 +1,47 @@
+{
+    "format": "wav",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "r&b, synth, bass, drums, 85 bpm, sultry, groovy, romantic, female vocals, silky vocals",
+    "lyrics": "[verse]\nNeon lights they flicker bright\nCity hums in dead of night\nRhythms pulse through concrete veins\nLost in echoes of refrains\n\n[chorus]\nTurn it up and let it flow\nFeel the fire let it grow\nIn this rhythm we belong\nHear the night sing out our song\n\n[verse]\nShadows dance on broken walls\nWhispered secrets down the halls\nEvery heartbeat tells a tale\nChasing thunder through the gale\n\n[bridge]\nWe are the sound that never fades\nBurning through the barricades\nElectric souls and midnight dreams\nNothing's ever what it seems\n\n[chorus]\nTurn it up and let it flow\nFeel the fire let it grow\nIn this rhythm we belong\nHear the night sing out our song",
+    "audio_duration": 90.0,
+    "infer_step": 60,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.05660820007324219,
+        "diffusion": 59.632476568222046,
+        "latent2audio": 6.9779229164123535
+    },
+    "actual_seeds": [
+        817218112
+    ],
+    "retake_seeds": [
+        3015464
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1777305135_6985f1cc.wav"
+}

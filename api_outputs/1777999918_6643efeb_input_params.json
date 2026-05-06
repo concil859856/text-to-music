@@ -1,0 +1,47 @@
+{
+    "format": "wav",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "emotional r&b ballad, cinematic soul, warm piano, soft synth pads, deep bass, subtle drums, 78 bpm, heartfelt, nostalgic, intimate, bittersweet, mother tribute, male vocals, tender vocals, powerful chorus, emotional climax",
+    "lyrics": "[verse 1]\nYou were running with the sunrise\nFire burning in your chest\nAn ambitious heart with bright eyes\nNever settling for less\n\nThen the pain came without warning\nTook the road beneath your feet\nBut you smiled through every morning\nSo I wouldn’t see defeat\n\n[pre-chorus]\nI was young, but I remember\nHow you hid the hurt away\nCrying softly in the silence\nJust to make it through the day\n\n[chorus]\nMom, you gave me all your seasons\nEvery dream you had, you placed in me\nWhen the world gave you a reason\nTo let go of everything\n\nYou held on through the thunder\nWith a broken heart and tired hands\nI was the reason you stayed here\nNow I hope you understand\nYou are the reason I am\n\n[verse 2]\nYou taught me letters at the table\nHeld my future in your eyes\nEven when your mind was aching\nYou still helped my spirit rise\n\nPeople took from your kindness\nLeft you wounded, left you cold\nBut you carried me through darkness\nWith a love that won’t grow old\n\n[pre-chorus]\nEvery school gate, every long night\nEvery prayer you never spoke\nBuilt the road that I would walk on\nBuilt the wings that gave me hope\n\n[chorus]\nMom, you gave me all your seasons\nEvery dream you had, you placed in me\nWhen the world gave you a reason\nTo let go of everything\n\nYou held on through the thunder\nWith a broken heart and tired hands\nI was the reason you stayed here\nNow I hope you understand\nYou are the reason I am\n\n[bridge]\nAnd I’m sorry for the distance\nFor the years I’ve been away\nI have carried your love with me\nEvery mile and every day\n\nI graduated, I kept going\nFound the life you prayed I’d find\nBut every moment I am growing\nI feel your hand still holding mine\n\n[breakdown]\nYou were strong when no one saw it\nYou were brave without applause\nYou lost pieces of yourself\nJust to help me become more\n\nAnd I know pride fills your eyes now\nBut I hope that you can see\nAll the good they say I carry\nStarted first inside of thee\n\n[final chorus]\nMom, you gave me all your seasons\nEvery dream you had, you placed in me\nWhen the world gave you a reason\nTo let go of everything\n\nYou held on through the thunder\nWith a broken heart and tired hands\nI was the reason you stayed here\nBut you’re the reason I can stand\n\nMom, I love you more than words can\nMore than time can understand\nAfter all these years of hurting\nYou’re still golden where you stand\n\n[outro]\nI miss you in the quiet\nI love you from afar\nYou are my first home, my shelter\nMy northern star\n\nIf my life became a song\nEvery note would lead to you\nMom, I am who I am\nBecause you made it through",
+    "audio_duration": 180.0,
+    "infer_step": 60,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.08698105812072754,
+        "diffusion": 172.95493054389954,
+        "latent2audio": 14.199604988098145
+    },
+    "actual_seeds": [
+        3269133856
+    ],
+    "retake_seeds": [
+        1170695874
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1777999918_6643efeb.wav"
+}

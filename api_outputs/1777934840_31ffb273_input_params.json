@@ -1,0 +1,47 @@
+{
+    "format": "wav",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "Ancient ritual chant, deep male voice (low, grounded, raw, almost spoken), soft female whisper (breathy, distant, ethereal), call-and-response structure, very slow tempo, breath-led rhythm, minimal frame drum, deep earthy drone, wind textures, subtle stone clicks, faint beluga harmonics, sacred atmosphere, no melody, no modern instruments, no beats, no drops, cinematic, organic, primal, timeless",
+    "lyrics": "[Intro]\n\nMaa… lea…\nMaa… lea…\n\nI hear you in the wind  \nbefore I understand\n\nMaa… lea…\n\n---\n\n[Verse 1]\n\nI walk the ancient dust  \nwhere time no longer speaks\n\nMaa… lea…\n\nMy feet remember paths  \nmy mind has long erased\n\nMaa… lea…\n\nThe ground still knows my name  \nbefore I learned to forget\n\nMaa… lea…\n\n---\n\n[Chorus]\n\nMaa… lea…  \ncall me back again\n\nMaa… lea…  \nI was never gone\n\nMaa… lea…  \nin the breath I take\n\nMaa… lea…  \nI return to you\n\n---\n\n[Verse 2]\n\nYou speak beneath my skin  \nin silence, in between\n\nMaa… lea…\n\nYou breathe inside the stone  \nwhere nothing seems alive\n\nMaa… lea…\n\nYou move in everything  \nI tried to \n\nMaa… lea…\n\n---\n\n[Bridge]\n\nAll that rises…  \ncomes from your breath\n\nAll that lives…  \nwas held in your hands\n\nI was chasing shadows  \nof something I already am\n\nI am not separate…  \nI never was\n\n---\n\n[Chorus]\n\nMaa… lea…  \ncall me back again\n\nMaa… lea…  \nI was never gone\n\nMaa… lea…  \nin the breath I take\n\nMaa… lea…  \nI return to you\n\n---\n\n[Outro]\n\nMaa… lea…\n\nYou were always here  \nin every breath I took\n\nMaa… lea…\n\nI remember now\n\nMaa…",
+    "audio_duration": 90.0,
+    "infer_step": 60,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.06252646446228027,
+        "diffusion": 65.43191814422607,
+        "latent2audio": 7.0906336307525635
+    },
+    "actual_seeds": [
+        1403104056
+    ],
+    "retake_seeds": [
+        1127056569
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1777934840_31ffb273.wav"
+}

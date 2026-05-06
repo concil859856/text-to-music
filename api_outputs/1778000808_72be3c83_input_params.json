@@ -1,0 +1,47 @@
+{
+    "format": "wav",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "slow emotional piano ballad, cinematic r&b, soft strings, warm pads, minimal drums, 65 bpm, intimate, reflective, heartbreaking, hopeful, mother tribute, male vocals, breathy vocals, tender build, emotional outro",
+    "lyrics": "[verse 1]\nBefore I knew the weight of pain\nYou carried yours so quietly\nA dream once lived inside your legs\nAn athlete’s fire, wild and free\n\nYou ran toward every morning\nWith a heart that would not bend\nThen one hard day changed everything\nBut your love did not end\n\n[pre-chorus]\nI think of all the nights you hid\nThe tears you never let me see\nYou broke in silence, piece by piece\nSo I could still believe\n\n[chorus]\nMother, I know\nYou gave your whole life to mine\nYou held the dark inside your hands\nAnd told me I would shine\n\nMother, I know\nThe world was heavy on your soul\nBut you stayed because of me\nNow I live because you held on\n\n[verse 2]\nYou taught me when my hands were small\nYou shaped my dreams with tired eyes\nYou gave me books, you gave me hope\nYou gave me every chance to rise\n\nEven when your mind was hurting\nEven when trust left you betrayed\nEven when the world took from you\nYou still found a way\n\n[pre-chorus]\nI didn’t know how much it cost\nTo send me further than your pain\nNow every door I walk through\nStill echoes with your name\n\n[chorus]\nMother, I know\nYou gave your whole life to mine\nYou held the dark inside your hands\nAnd told me I would shine\n\nMother, I know\nThe world was heavy on your soul\nBut you stayed because of me\nNow I live because you held on\n\n[bridge]\nI have been away for years now\nBut distance never made love fade\nI graduated, found my road\nJust like you once prayed\n\nAnd when you say that you are proud\nI hear the years you never spoke\nAll the nights you kept on breathing\nWhen you were losing hope\n\n[final chorus]\nMother, I know\nYou gave your whole life to mine\nYou buried sorrow in your chest\nSo I could reach the sky\n\nMother, I know\nI cannot give your past back whole\nBut I can love you with this life\nAnd make sure your story’s told\n\n[outro]\nI miss you more than I can say\nI love you more than I can show\nYou were my shelter in the storm\nMy first and truest home\n\nAnd if my life has any light\nIt started in your hands\nYou stayed alive because of me\nBut because of you, I stand",
+    "audio_duration": 180.0,
+    "infer_step": 60,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.07000136375427246,
+        "diffusion": 166.45253348350525,
+        "latent2audio": 14.183127164840698
+    },
+    "actual_seeds": [
+        3812724191
+    ],
+    "retake_seeds": [
+        475895636
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1778000808_72be3c83.wav"
+}

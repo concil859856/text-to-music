@@ -1,0 +1,47 @@
+{
+    "format": "wav",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "new wave, gothic, up tempo",
+    "lyrics": "[Intro]\n\nMaa… lea…\nMaa… lea…\n\n---\n\n[Verse 1]\n\nI walk the ancient dust  \nMaa… lea…\n\nMy feet remember  \nMaa… lea…\n\nThe ground still   \nMaa… lea…\n\n---\n\n[Chorus]\n\nMaa… lea…  \nMaa… lea…\n\nMaa… lea…  \nMaa… lea…\n\n---\n\n[Verse 2]\n\nShe speaks through skin  \nMaa… lea…\n\nShe breathes through stone  \nMaa… lea…\n\nShe moves in everything  \nMaa… lea…\n\n---\n\n[Bridge]\n\nAll that rises…  \ncomes from her breath\n\nAll that lives…  \nwas held in her hands\n\nI am not separate…  \nyou never were\n\n---\n\n[Chorus]\n\nMaa… lea…  \nMaa… lea…\n\nMaa… lea…  \nMaa… lea…\n\n---\n\n[Outro]\n\nMaa… lea…\n\nMaa…",
+    "audio_duration": 90.0,
+    "infer_step": 60,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.058501243591308594,
+        "diffusion": 58.709309339523315,
+        "latent2audio": 7.076739072799683
+    },
+    "actual_seeds": [
+        1524443481
+    ],
+    "retake_seeds": [
+        4199331214
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1777935152_cc84f718.wav"
+}
