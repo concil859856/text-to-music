@@ -1,0 +1,47 @@
+{
+    "format": "mp3",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "electronic, house, electro house, synthesizer, drums, bass, percussion, 128 bpm, energetic, uplifting, exciting, instrumental",
+    "lyrics": "[verse]\nWake up to the neon gray\nPushing through another day\nClock is ticking fast and loud\nLost inside a rushing crowd\n\n[chorus]\nBut when I hold you close to me\nThe only place I want to be\nYou are the light inside the dark\nYou are the fire and the spark\n\n[verse]\nConcrete walls and heavy rain\nHiding all the quiet pain\nRunning circles in the street\nSearching for a steady beat\n\n[bridge]\nEverything fades away\nWhen you look my way\nI finally feel alive\nIn your arms I survive\n\n[chorus]\nBut when I hold you close to me\nThe only place I want to be\nYou are the light inside the dark\nYou are the fire and the spark\n\n[outro]\nOnly you make it right\nOnly you keep the light\nJust you and me\nFinally free",
+    "audio_duration": 90.0,
+    "infer_step": 60,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.07684755325317383,
+        "diffusion": 59.97716045379639,
+        "latent2audio": 10.378957986831665
+    },
+    "actual_seeds": [
+        1267736955
+    ],
+    "retake_seeds": [
+        1905621291
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1778611067_96a344e4.mp3"
+}

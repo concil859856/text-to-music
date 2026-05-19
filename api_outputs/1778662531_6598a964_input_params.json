@@ -1,0 +1,47 @@
+{
+    "format": "mp3",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "electronic, house, electro house, synthesizer, drums, bass, percussion, 128 bpm, energetic, uplifting, exciting, instrumental",
+    "lyrics": "[verse]\nGold light painting on the dashboard glass\nCounting every mile as the shadows pass\nSilk scarf flying in the evening breeze\nDriving through the valley and the velvet trees\n\n[chorus]\nElectric sky and a neon glow\nWhere the city lights begin to show\nChase the sun till the world turns blue\nDriving in the magic just to get to you\n\n[verse]\nMirror shades reflecting all the amber haze\nLost inside the rhythm of the summer daze\nDiamond headlights cutting through the heat\nDancing to the pulse of a disco beat\n\n[bridge]\nHigher and higher the feeling goes\nWhere the road ends only heaven knows\nHold on tight while the colors fade\nIn the golden hour that we made\n\n[chorus]\nElectric sky and a neon glow\nWhere the city lights begin to show\nChase the sun till the world turns blue\nDriving in the magic just to get to you\n\n[outro]\nInto the night\nInto the light\nJust keep driving\nKeep on driving",
+    "audio_duration": 90.0,
+    "infer_step": 60,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.05360007286071777,
+        "diffusion": 61.58390951156616,
+        "latent2audio": 10.512937545776367
+    },
+    "actual_seeds": [
+        1075796398
+    ],
+    "retake_seeds": [
+        3206759787
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1778662531_6598a964.mp3"
+}

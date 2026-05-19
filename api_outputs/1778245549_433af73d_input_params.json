@@ -1,0 +1,47 @@
+{
+    "format": "wav",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "r&b, synth, bass, drums, 85 bpm, sultry, groovy, romantic, female vocals, silky vocals",
+    "lyrics": "[verse]\nSlow down, baby, take your time\nGot the city humming on a dime\nEvery word you say, I'm caught inside\nNowhere I would rather hide\n\n[chorus]\nTell me how it feels, oh, oh\nTell me what is real, oh, oh\nGot me right where I should be\nFalling in your gravity\n\n[verse]\nSoft light spilling through the blinds\nMemories that wouldn't leave my mind\nEvery kiss a melody I've found\nEvery silence has a sound\n\n[bridge]\nStay a little longer, please don't go\nGot a thousand things I've yet to know\nYou're the only place I rest my head\nEverything you said\n\n[chorus]\nTell me how it feels, oh, oh\nTell me what is real, oh, oh\nGot me right where I should be\nFalling in your gravity\n\n[outro]\nFalling in your gravity\nFalling in your gravity",
+    "audio_duration": 90.0,
+    "infer_step": 27,
+    "guidance_scale": 12.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.053227901458740234,
+        "diffusion": 27.27713108062744,
+        "latent2audio": 6.931096315383911
+    },
+    "actual_seeds": [
+        1752533985
+    ],
+    "retake_seeds": [
+        2965455702
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1778245549_433af73d.wav"
+}

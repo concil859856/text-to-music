@@ -10,7 +10,7 @@ import shutil
 
 import click
 import uvicorn
-from fastapi import FastAPI, HTTPException, UploadFile, File, Form
+from fastapi import FastAPI, HTTPException, UploadFile, File, Form, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -65,6 +65,23 @@ def save_upload(upload: UploadFile) -> str:
     with open(path, "wb") as f:
         shutil.copyfileobj(upload.file, f)
     return path
+
+
+def _safe_remove(path: Optional[str]) -> None:
+    if not path:
+        return
+    try:
+        if os.path.exists(path):
+            os.remove(path)
+    except OSError:
+        pass
+
+
+def _cleanup_generated(audio_path: str) -> None:
+    """Delete the served audio file and its sidecar _input_params.json."""
+    _safe_remove(audio_path)
+    base, _ = os.path.splitext(audio_path)
+    _safe_remove(f"{base}_input_params.json")
 
 
 # ---------------------------------------------------------------------------
@@ -199,6 +216,8 @@ async def audio2audio(
         return {"status": "success", "audio_path": audio_path, "params": params}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    finally:
+        _safe_remove(ref_path)
 
 
 # ---- Retake ----
@@ -257,7 +276,6 @@ async def retake(
             retake_seeds=parse_seeds(retake_seeds),
             retake_variance=retake_variance,
             task="retake",
-            src_audio_path=src_path,
             lora_name_or_path=lora_name_or_path,
             lora_weight=lora_weight,
             save_path=save_path,
@@ -267,6 +285,8 @@ async def retake(
         return {"status": "success", "audio_path": audio_path, "params": params}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    finally:
+        _safe_remove(src_path)
 
 
 # ---- Repaint ----
@@ -339,6 +359,8 @@ async def repaint(
         return {"status": "success", "audio_path": audio_path, "params": params}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    finally:
+        _safe_remove(src_path)
 
 
 # ---- Edit ----
@@ -415,6 +437,8 @@ async def edit(
         return {"status": "success", "audio_path": audio_path, "params": params}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    finally:
+        _safe_remove(src_path)
 
 
 # ---- Extend ----
@@ -488,17 +512,22 @@ async def extend(
         return {"status": "success", "audio_path": audio_path, "params": params}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    finally:
+        _safe_remove(src_path)
 
 
 # ---- Serve generated audio files ----
 @app.get("/audio/{filename:path}")
-async def serve_audio(filename: str):
+async def serve_audio(filename: str, background_tasks: BackgroundTasks):
     filepath = os.path.join(OUTPUT_DIR, os.path.basename(filename))
     if not os.path.exists(filepath):
         # try the raw path in case it's absolute from params
         filepath = filename
     if not os.path.exists(filepath):
         raise HTTPException(status_code=404, detail="Audio file not found")
+    # Delete the file (and its sidecar params json) after the response is sent,
+    # so the caller gets the bytes and we don't accumulate files on disk.
+    background_tasks.add_task(_cleanup_generated, filepath)
     return FileResponse(filepath, media_type="audio/wav")
 
 

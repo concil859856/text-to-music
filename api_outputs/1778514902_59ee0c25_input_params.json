@@ -1,0 +1,47 @@
+{
+    "format": "wav",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "rock, electric guitar, drums, bass, 130 bpm, energetic, rebellious, gritty, male vocals, raw vocals",
+    "lyrics": "[verse]\n현재 compressor의 근본 문제는 \"좋은 block을 찾는 것\"과 \"좋은 압축을 만드는 것\"을 같은 문제로 취급한 것입니다. ratio가 낮을수록 이 둘은 구조적으로 분리되며, 진짜 개선은 token budget 내에서 QA answerability를 직접 최대화하는 방향으로 objective를 재정의하는 데서 옵니다.\n\n[chorus]\nTear it down, tear it down to the bone\nWe're the noise that won't go home\nTear it down, tear it down all night\nStanding in the strobe-light fight\n\n[verse]\nAsphalt cracked beneath the heat\nDrumbeats pounding to my feet\nBlack leather and a borrowed flame\nNothing's ever gonna be the same\n\n[bridge]\nWe don't quit, we don't ask why\nCut the wire, take the sky\nBurn the page, write our name\nThis is bigger than the game\n\n[chorus]\nTear it down, tear it down to the bone\nWe're the noise that won't go home\nTear it down, tear it down all night\nStanding in the strobe-light fight\n\n[outro]\nTear it down, tear it down\nTear it down tonight",
+    "audio_duration": 90.0,
+    "infer_step": 60,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.1389758586883545,
+        "diffusion": 62.1320276260376,
+        "latent2audio": 6.997332811355591
+    },
+    "actual_seeds": [
+        1911652045
+    ],
+    "retake_seeds": [
+        3219015792
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1778514902_59ee0c25.wav"
+}

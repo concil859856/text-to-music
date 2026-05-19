@@ -1,0 +1,47 @@
+{
+    "format": "wav",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "rock, electric guitar, drums, bass, 130 bpm, energetic, rebellious, gritty, male vocals, raw vocals",
+    "lyrics": "[verse]\nBurned the bridges I walked across\nCounted every gain and loss\nLoud guitars and borrowed pride\nNothing left for me to hide\n\n[chorus]\nTear it down, tear it down to the bone\nWe're the noise that won't go home\nTear it down, tear it down all night\nStanding in the strobe-light fight\n\n[verse]\nAsphalt cracked beneath the heat\nDrumbeats pounding to my feet\nBlack leather and a borrowed flame\nNothing's ever gonna be the same\n\n[bridge]\nWe don't quit, we don't ask why\nCut the wire, take the sky\nBurn the page, write our name\nThis is bigger than the game\n\n[chorus]\nTear it down, tear it down to the bone\nWe're the noise that won't go home\nTear it down, tear it down all night\nStanding in the strobe-light fight\n\n[outro]\nTear it down, tear it down\nTear it down tonight",
+    "audio_duration": 140.0,
+    "infer_step": 120,
+    "guidance_scale": 18.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.06489419937133789,
+        "diffusion": 223.6327362060547,
+        "latent2audio": 11.067244529724121
+    },
+    "actual_seeds": [
+        326962093
+    ],
+    "retake_seeds": [
+        1665278366
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1778766183_66647fbc.wav"
+}

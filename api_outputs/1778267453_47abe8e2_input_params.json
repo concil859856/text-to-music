@@ -1,0 +1,47 @@
+{
+    "format": "wav",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "pop, synth, drums, guitar, 120 bpm, upbeat, catchy, vibrant, female vocals, polished vocals",
+    "lyrics": "Welcome to Bittensor, where value's the game\nEach player's role not quite the same\nThrough self-interest they all connect to\nMaximize TAO value while using intellect\nMiners do the work, they find the gold\nValidators check the work, truth be told\nSubnet Owners control, they set the course\nStakers judge the value, value they endorse\nIn the race for TAO miners compete\nEach block they mine elevates the network's heat\nFrom miners' work, a new commodity grows\nOn Bittensor's Network value continually flows\nThrough validators, miners work is seen\nValidators vet the products keeping the network clean\nValidators grant access to the wealth miners sow\nIn Bittensor's world, validators facilitate value flow\n[Chorus]\nMiners do the work they find the gold\nValidators check the work, value behold\nSubnet Owners control, they set the course\nStakers judge the value, value they endorse\nFrom Miner to Staker each role intertwined\nFor massive value their efforts combined\nEach player's effort, for value aligned\nAt 21 million, our max supply is defined\nSubnet Owners, orchestrators of their game\nCrafting the rules, justifying the subnet they claim\nAnd fierce competition for emissions they vie\nTheir subnet's might they amplify\nStakers, the judges in the network's court\nAssigning value, where merit is the sport\nAll stakers' collective wisdom, a symphony that transcends\nUnbeatable in judgment where value expands\n[Chorus]\nMiners do the work, they find the gold\nValidators check the work, value behold\nSubnet Owners control, they set the course\nStakers judge the value, value they endorse\nPermissionless entry, no gates no tolls\nDecentralized power where innovation rolls\nA market where freedom and gain intertwine\nUnleashing value in a system divine\nBittensor\nPermissionless entry, no gates no tolls\nDecentralized power where innovation rolls\nA market where freedom and gain intertwine\nUnleashing value in a system divine",
+    "audio_duration": 90.0,
+    "infer_step": 60,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.0963432788848877,
+        "diffusion": 70.35470652580261,
+        "latent2audio": 7.027207374572754
+    },
+    "actual_seeds": [
+        3599355083
+    ],
+    "retake_seeds": [
+        2358981765
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1778267453_47abe8e2.wav"
+}

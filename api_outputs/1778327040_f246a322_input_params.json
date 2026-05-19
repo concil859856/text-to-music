@@ -1,0 +1,47 @@
+{
+    "format": "wav",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "disco, four-on-the-floor drums, slap bass, strings, hi-hats, 120 bpm, danceable, glamorous, female vocals",
+    "lyrics": "[verse]\nStreetlights paint the city wide\nGot my heart out for the ride\nEvery spark turns into gold\nTell me everything you hold\n\n[chorus]\nLight it up, light it up tonight\nFeel it flicker in the strobe light\nLight it up, light it up tonight\nBring it back, bring it back to life\n\n[outro]\nLight it up, light it up\nLight it up tonight",
+    "audio_duration": 90.0,
+    "infer_step": 27,
+    "guidance_scale": 12.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.0433042049407959,
+        "diffusion": 25.304347276687622,
+        "latent2audio": 6.92951226234436
+    },
+    "actual_seeds": [
+        2016305041
+    ],
+    "retake_seeds": [
+        2640718060
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1778327040_f246a322.wav"
+}

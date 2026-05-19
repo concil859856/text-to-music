@@ -1,0 +1,47 @@
+{
+    "format": "mp3",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "extend",
+    "prompt": "upbeat electronic dance, synth lead, 128bpm",
+    "lyrics": "",
+    "audio_duration": 44.953833333333336,
+    "infer_step": 27,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.030750274658203125,
+        "diffusion": 20.31419277191162,
+        "latent2audio": 6.63419508934021
+    },
+    "actual_seeds": [
+        183450628
+    ],
+    "retake_seeds": [
+        1005366426
+    ],
+    "retake_variance": 1.0,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": -0.0,
+    "repaint_end": 54.953833333333336,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": "./api_outputs/uploads/e3ed49534a674eb0a3ce1af32a9d534b.mp3",
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1778766477_5523c926.mp3"
+}

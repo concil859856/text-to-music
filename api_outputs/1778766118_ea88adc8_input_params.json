@@ -1,0 +1,47 @@
+{
+    "format": "mp3",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "audio2audio",
+    "prompt": "jazz piano trio, walking bass, brushed drums",
+    "lyrics": "",
+    "audio_duration": 20.0,
+    "infer_step": 27,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.05336570739746094,
+        "diffusion": 7.624932050704956,
+        "latent2audio": 5.306309938430786
+    },
+    "actual_seeds": [
+        1368606417
+    ],
+    "retake_seeds": [
+        4152693333
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": true,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": "./api_outputs/uploads/700f2502f84c4161bf8008fc61f1a17b.mp3",
+    "audio_path": "./api_outputs/1778766118_ea88adc8.mp3"
+}

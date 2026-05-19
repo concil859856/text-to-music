@@ -1,0 +1,47 @@
+{
+    "format": "wav",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "disco, four-on-the-floor drums, slap bass, strings, hi-hats, 120 bpm, danceable, glamorous, female vocals",
+    "lyrics": "Verse 1\nBoot up the node, let the cold start glow,\nWeights on the chain where the signals flow,\nMiners in the dark turn thought into light,\nValidators watching through the middle of the night.\nOpen intelligence, nobody owns the flame,\nEvery subnet building something with a name,\nFrom language to vision, from code to art,\nA decentralized mind with a thousand beating hearts.\nPre-Chorus\nStake it, rank it, prove what you know,\nConsensus rising while the networks grow,\nNo gatekeepers, no ivory throne,\nThe future of AI belongs to the swarm alone.\nChorus\nBittensor — hear the signal roar,\nKnowledge on the chain forevermore,\nDigital minds in a synchronized storm,\nBuilding the future in decentralized form.\nBittensor — let the subnet sing,\nRewards for the value intelligence brings,\nFrom the miners to the validators strong,\nThis is the network, this is the song.\nVerse 2\nTAO in motion like a pulse through the wire,\nCompetition sparks decentralized fire,\nEvery response measured by the crowd,\nTruth gets amplified, weak signals fade out.\nNo single king, no centralized control,\nJust incentives aligned with a common goal,\nTrain the machine but keep it free,\nAn open-source intelligence economy.\nBridge\nAcross the world the GPUs ignite,\nMillions of minds connecting tonight,\nOne chain, many voices, evolving in time,\nTurning raw data into something sublime.\nFinal Chorus\nBittensor — hear the signal rise,\nA neural constellation in the digital skies,\nValidators judge, miners refine,\nCreating collective intelligence one block at a time.\nBittensor — the subnet anthem plays,\nThrough the code and the cryptographic haze,\nPowered by vision, incentives, and song,\nThe decentralized future is already on.\nOutro\nBoot up the node…\nLet the network breathe…\nBittensor forever…\nIntelligence set free.",
+    "audio_duration": 90.0,
+    "infer_step": 60,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.07079863548278809,
+        "diffusion": 69.19330644607544,
+        "latent2audio": 7.0090320110321045
+    },
+    "actual_seeds": [
+        4161005055
+    ],
+    "retake_seeds": [
+        2094981745
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1778703326_eca72a2a.wav"
+}

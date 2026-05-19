@@ -1,0 +1,47 @@
+{
+    "format": "wav",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "disco, four-on-the-floor drums, slap bass, strings, hi-hats, 120 bpm, danceable, glamorous, female vocals",
+    "lyrics": "[verse]\nMirror ball casting diamonds on your face\nOur feet move in time, this crowded place\nYour hand in mine, a silent conversation\nSpinning lights can't hide this revelation\n\n[chorus]\nDisco heartbeat, we're electric tonight\nStrings pull tighter, every step feels right\nUnder the glitter, love's in the air\nYou're my rhythm, baby, beyond compare\n\n[verse]\nSlap bass line echoes what I can't say\nHi-hats ticking moments we replay\nEyes locked in the chaos, just us two\nThis dance floor scripture written me and you\n\n[chorus]\nDisco heartbeat, we're electric tonight\nStrings pull tighter, every step feels right\nUnder the glitter, love's in the air\nYou're my rhythm, baby, beyond compare\n\n[bridge]\nFour-on-the-floor, my pulse aligns\nGlamour's just sparkle till your fingers find mine\nOutshine the sequins with every slide\nDangerous promise in this neon tide\n\n[chorus]\nDisco heartbeat, we're electric tonight\nStrings pull tighter, every step feels right\nUnder the glitter, love's in the air\nYou're my rhythm, baby, beyond compare\n\n[outro]\nTonight's forever in the mirror ball's eye\nOur love reflected where the spotlights lie",
+    "audio_duration": 90.0,
+    "infer_step": 60,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.056466102600097656,
+        "diffusion": 63.84086275100708,
+        "latent2audio": 6.9654974937438965
+    },
+    "actual_seeds": [
+        1814966504
+    ],
+    "retake_seeds": [
+        1804699807
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1778335228_0a825ebb.wav"
+}

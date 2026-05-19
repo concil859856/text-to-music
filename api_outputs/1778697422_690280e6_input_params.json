@@ -1,0 +1,47 @@
+{
+    "format": "wav",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "math rock, emo rap, R&B, post-hardcore, clean intricate guitar, 808 bass, trap hi-hats, ambient synths, reverb pads, 88 bpm, A minor, melancholic, triumphant, cathartic, male vocals, smooth R&B tenor, falsetto, introspective, cinematic",
+    "lyrics": "[intro]\n\n[verse]\nI been living in the fog so long I forgot the sun\nChasing shadows on the ceiling telling myself I won\nKept the blinds shut kept the phone off kept the mirrors turned\nEvery reflection showed a version I hadn't earned\nUsed to write my pain in margins never read it back\nNow I'm tracing every scar like it's a map to get me on track\nMy people said I'd make it I just couldn't hear it then\nToo busy being my own worst enemy and my dead end\n\n[pre-chorus]\nBut something shifts when you've been low enough\nYou either break or you become unbreakable yeah\nI felt the ground I felt the cold\nI felt the pull of letting go\nBut I stayed\n\n[chorus]\nI found a light in the static\nIn the noise where I was drowning\nI climbed out of the dark\nWhen I thought I was lost I was becoming\nThis is not the end of me\nThis is where I finally start\nI found a light in the static\nRight here in the broken parts\n\n[verse]\nI used to romanticize the bottom like it made me deep\nBut suffering ain't a flex it's just a promise you can't keep\nTo yourself to the people who were waiting by the door\nI walked back in and damn I didn't know what grace was for\nNow the guitar hits different when your chest ain't made of stone\nFunny how surviving teaches you that you were never alone\nEvery scar's a timestamp of a battle that I won\nEvery dark night had an ending every ending had a sun\n\n[pre-chorus]\nAnd something shifts when you've hit rock bottom twice\nYou either stay there or you let the damage be the price\nThat paid for who you're gonna be\nI hear it now I feel it now\nI'm free\n\n[chorus]\nI found a light in the static\nIn the noise where I was drowning\nI climbed out of the dark\nWhen I thought I was lost I was becoming\nThis is not the end of me\nThis is where I finally start\nI found a light in the static\nRight here in the broken parts\n\n[solo]\n\n[outro]\nI almost didn't ma",
+    "audio_duration": 90.0,
+    "infer_step": 60,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.15117311477661133,
+        "diffusion": 68.3393223285675,
+        "latent2audio": 7.000213384628296
+    },
+    "actual_seeds": [
+        3504888992
+    ],
+    "retake_seeds": [
+        2186530213
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1778697422_690280e6.wav"
+}

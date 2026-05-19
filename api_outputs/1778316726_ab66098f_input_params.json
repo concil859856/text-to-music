@@ -1,0 +1,47 @@
+{
+    "format": "mp3",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "rock, electric guitar, drums, bass, 130 bpm, energetic, rebellious, gritty, male vocals, raw vocals",
+    "lyrics": "[verse]\nTony Mr Tony\nYou got to pump it up \nenter nock or oct \nget knocked up\n\none hundred dollar buys\nCant cut it \nUp your price \ndeploy more capital\n\n[chorus]\nThe time is now \nAlt season is sneezin \nare you believing \nEnter nock or oct\nGet knocked up \n\n\n",
+    "audio_duration": 45.0,
+    "infer_step": 60,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.0479586124420166,
+        "diffusion": 34.32703375816345,
+        "latent2audio": 5.343921899795532
+    },
+    "actual_seeds": [
+        211126417
+    ],
+    "retake_seeds": [
+        224487600
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1778316726_ab66098f.mp3"
+}

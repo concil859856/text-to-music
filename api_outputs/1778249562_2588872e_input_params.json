@@ -1,0 +1,47 @@
+{
+    "format": "wav",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "text2music",
+    "prompt": "Piano, electric guitar, epic, solo guitar at the end",
+    "lyrics": "[verse]\n微风吹过安静的窗台\n回忆拼成灿烂的星海\n那些只有你懂的独白\n化作最美的梦盛开\n\n[chorus]\n你是夜空最亮的星光\n照亮我所有胆怯迷茫\n陪你乘风破浪去远航\n我们的故事闪闪发亮\n\n[verse]\n时钟滴答走过春秋冬夏\n有你的雨天也开满鲜花\n不怕世界有多么庞大\n牵着手就能到达灯塔\n\n[bridge]\n就算偶尔会跌倒受伤\n眼泪也会变成力量\n听那萨克斯在风中回荡\n勇敢是我们最美的翅膀\n\n[chorus]\n你是夜空最亮的星光\n照亮我所有胆怯迷茫\n陪你乘风破浪去远航\n我们的故事闪闪发亮\n\n[outro]\n钢琴键上弹奏着希望\n谢谢你陪我走在路上\n未来每一天都要晴朗\n永远都是最好的模样",
+    "audio_duration": 120.0,
+    "infer_step": 60,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.1582949161529541,
+        "diffusion": 100.31983280181885,
+        "latent2audio": 9.398122072219849
+    },
+    "actual_seeds": [
+        404619583
+    ],
+    "retake_seeds": [
+        121291222
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.0,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": null,
+    "edit_target_prompt": null,
+    "edit_target_lyrics": null,
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1778249562_2588872e.wav"
+}

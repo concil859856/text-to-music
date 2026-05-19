@@ -1,0 +1,47 @@
+{
+    "format": "mp3",
+    "lora_name_or_path": "none",
+    "lora_weight": 1.0,
+    "task": "edit",
+    "prompt": "mellow acoustic guitar, slow tempo, ambient",
+    "lyrics": "",
+    "audio_duration": 44.953833333333336,
+    "infer_step": 27,
+    "guidance_scale": 15.0,
+    "scheduler_type": "euler",
+    "cfg_type": "apg",
+    "omega_scale": 10.0,
+    "guidance_interval": 0.5,
+    "guidance_interval_decay": 0.0,
+    "min_guidance_scale": 3.0,
+    "use_erg_tag": true,
+    "use_erg_lyric": false,
+    "use_erg_diffusion": true,
+    "oss_steps": [],
+    "timecosts": {
+        "preprocess": 0.03352975845336914,
+        "diffusion": 14.936232566833496,
+        "latent2audio": 5.562390565872192
+    },
+    "actual_seeds": [
+        2177243591
+    ],
+    "retake_seeds": [
+        370835752
+    ],
+    "retake_variance": 0.5,
+    "guidance_scale_text": 0.0,
+    "guidance_scale_lyric": 0.0,
+    "repaint_start": 0,
+    "repaint_end": 0,
+    "edit_n_min": 0.6,
+    "edit_n_max": 1.0,
+    "edit_n_avg": 1,
+    "src_audio_path": "./api_outputs/uploads/56b6f58360484cb0bfe7a3dd993ad7d2.mp3",
+    "edit_target_prompt": "mellow acoustic guitar, slow tempo, ambient",
+    "edit_target_lyrics": "",
+    "audio2audio_enable": false,
+    "ref_audio_strength": 0.5,
+    "ref_audio_input": null,
+    "audio_path": "./api_outputs/1778766445_297a10ee.mp3"
+}
