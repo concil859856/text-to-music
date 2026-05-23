@@ -39,9 +39,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Install deps first (slow torch/peft/etc. layer caches across iterations).
 WORKDIR /app
 COPY requirements.txt ./
+# Pin torch + torchvision + torchaudio to a matched cu126 triple BEFORE
+# resolving requirements.txt, and re-assert the pins via a constraint file
+# so requirements.txt's unpinned `torchvision` can't drag torch back to
+# cu13 from PyPI. Latest cu126 wheels at time of writing top out at
+# torch 2.9.1 / torchvision 0.24.1 / torchaudio 2.9.1 — the matched set.
+# Without this you get: "PyTorch and torchvision were compiled with
+# different CUDA major versions" the moment api.py imports diffusers.
 RUN pip3 install --upgrade pip \
     && pip3 install hf_transfer peft \
-    && pip3 install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu126
+    && pip3 install --index-url https://download.pytorch.org/whl/cu126 \
+         torch==2.9.1 torchvision==0.24.1 torchaudio==2.9.1 \
+    && printf 'torch==2.9.1\ntorchvision==0.24.1\ntorchaudio==2.9.1\n' > /tmp/cu126.txt \
+    && pip3 install -r requirements.txt -c /tmp/cu126.txt
 
 # Copy the actual project source.
 COPY . .
