@@ -9,8 +9,9 @@ __pycache__
 .pytest_cache
 .env
 .env.*
-README.md
-LICENSE
+# NOTE: README.md is intentionally NOT ignored — setup.py reads it for
+# long_description and `pip install -e .` fails with FileNotFoundError if
+# it's missing from the build context.
 TRAIN_INSTRUCTION.md
 ZH_RAP_LORA.md
 API.md
