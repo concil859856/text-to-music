@@ -59,6 +59,22 @@ COPY . .
 # Install the acestep package itself (it's a pip-installable project).
 RUN pip3 install --no-deps -e .
 
+# Build-time import smoke test — verifies the full import chain the api
+# entrypoint exercises (torch + torchvision + transformers + diffusers +
+# acestep) is internally consistent. Cheap (no GPU, no model load, ~5 s)
+# but catches ABI mismatches like cu126/cu13 torch-vs-torchvision before
+# we publish to Docker Hub. The image that crashed in production on
+# 94.101.98.58 would have failed this step instead of going green.
+#
+# IMPORTANT: this runs on the GitHub Actions CPU runner, so anything that
+# requires CUDA at import time will break it. torchvision's _check_cuda_
+# version() runs at import without touching a device, which is what we
+# want; if a future module needs a real GPU just to import, gate it
+# behind a try/except in the application, not here.
+RUN python3 -c "import torch, torchvision, torchaudio; print('torch', torch.__version__, 'vision', torchvision.__version__, 'audio', torchaudio.__version__)" \
+    && python3 -c "from acestep.pipeline_ace_step import ACEStepPipeline; print('acestep import OK')" \
+    && python3 -c "import api; print('api import OK')"
+
 # Persistent volumes for the ~7 GB ACE-Step checkpoints + output WAVs +
 # logs. Mount host directories here so the model isn't re-downloaded on
 # every container recreation.
