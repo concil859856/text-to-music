@@ -39,15 +39,41 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Install deps first (slow torch/peft/etc. layer caches across iterations).
 WORKDIR /app
 COPY requirements.txt ./
+# Pin torch + torchvision + torchaudio to a matched cu126 triple BEFORE
+# resolving requirements.txt, and re-assert the pins via a constraint file
+# so requirements.txt's unpinned `torchvision` can't drag torch back to
+# cu13 from PyPI. Latest cu126 wheels at time of writing top out at
+# torch 2.9.1 / torchvision 0.24.1 / torchaudio 2.9.1 — the matched set.
+# Without this you get: "PyTorch and torchvision were compiled with
+# different CUDA major versions" the moment api.py imports diffusers.
 RUN pip3 install --upgrade pip \
     && pip3 install hf_transfer peft \
-    && pip3 install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu126
+    && pip3 install --index-url https://download.pytorch.org/whl/cu126 \
+         torch==2.9.1 torchvision==0.24.1 torchaudio==2.9.1 \
+    && printf 'torch==2.9.1\ntorchvision==0.24.1\ntorchaudio==2.9.1\n' > /tmp/cu126.txt \
+    && pip3 install -r requirements.txt -c /tmp/cu126.txt
 
 # Copy the actual project source.
 COPY . .
 
 # Install the acestep package itself (it's a pip-installable project).
 RUN pip3 install --no-deps -e .
+
+# Build-time import smoke test — verifies the full import chain the api
+# entrypoint exercises (torch + torchvision + transformers + diffusers +
+# acestep) is internally consistent. Cheap (no GPU, no model load, ~5 s)
+# but catches ABI mismatches like cu126/cu13 torch-vs-torchvision before
+# we publish to Docker Hub. The image that crashed in production on
+# 94.101.98.58 would have failed this step instead of going green.
+#
+# IMPORTANT: this runs on the GitHub Actions CPU runner, so anything that
+# requires CUDA at import time will break it. torchvision's _check_cuda_
+# version() runs at import without touching a device, which is what we
+# want; if a future module needs a real GPU just to import, gate it
+# behind a try/except in the application, not here.
+RUN python3 -c "import torch, torchvision, torchaudio; print('torch', torch.__version__, 'vision', torchvision.__version__, 'audio', torchaudio.__version__)" \
+    && python3 -c "from acestep.pipeline_ace_step import ACEStepPipeline; print('acestep import OK')" \
+    && python3 -c "import api; print('api import OK')"
 
 # Persistent volumes for the ~7 GB ACE-Step checkpoints + output WAVs +
 # logs. Mount host directories here so the model isn't re-downloaded on

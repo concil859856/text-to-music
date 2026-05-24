@@ -1406,13 +1406,20 @@ class ACEStepPipeline:
                 output_path_wav = save_path
 
         target_wav = target_wav.float()
-        backend = "soundfile"
-        if format == "ogg":
-            backend = "sox"
-        logger.info(f"Saving audio to {output_path_wav} using backend {backend}")
-        torchaudio.save(
-            output_path_wav, target_wav, sample_rate=sample_rate, format=format, backend=backend
-        )
+        # torchaudio>=2.9 delegates save() to the separate `torchcodec` C++
+        # encoder regardless of the `backend=` kwarg, and the version that
+        # ships matched-to-torch-2.9 crashes natively (std::length_error,
+        # `vector::reserve`) on this tensor shape, killing uvicorn worker.
+        # The code's intent is `backend="soundfile"`, so call soundfile
+        # directly and skip torchcodec entirely. soundfile handles wav/flac/
+        # ogg natively via libsndfile, which is installed in the image.
+        import soundfile as sf
+        # soundfile wants channels-last float32: (frames, channels).
+        wav = target_wav.detach().cpu().numpy()
+        if wav.ndim == 2 and wav.shape[0] < wav.shape[1]:
+            wav = wav.T  # (C, N) → (N, C)
+        logger.info(f"Saving audio to {output_path_wav} via soundfile (format={format})")
+        sf.write(output_path_wav, wav, samplerate=int(sample_rate), format=format.upper())
         return output_path_wav
 
     @cpu_offload("music_dcae")
